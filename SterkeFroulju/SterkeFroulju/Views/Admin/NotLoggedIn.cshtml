@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Login:";
+    Layout = "~/Views/Admin/_Layout.cshtml";
+}
+
+<h2>Login:</h2>
+
+<div class="row">
+    @using (Html.BeginForm("Login", "Admin", FormMethod.Post))
+    {
+        <fieldset>
+            <div class="col-lg-12 input-group-lg">
+                <input name="UserName" type="text" placeholder="Gebruikersnaam" class="form-control" style="min-width:350px; max-width:350px;">
+
+                <input name="Password" type="password" placeholder="Wachtwoord" class="form-control" style="min-width:350px; max-width:350px;">
+
+                <button type="submit" class="btn-lg btn-success form-control" style="min-width:350px; max-width:350px;">Login</button>
+            </div>
+
+        </fieldset>
+    }
+</div>
+
