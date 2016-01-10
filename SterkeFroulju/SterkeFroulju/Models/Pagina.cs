@@ -23,6 +23,8 @@ namespace SterkeFroulju.Models
             }
         }
 
+        public Pagina[] MenuPaginas { get; private set; }
+
         public Pagina(int ID, string Title, string Body, DateTime TimeStamp, int postedByID, bool Published) : base(ID)
         {
             this.Title = Title;
