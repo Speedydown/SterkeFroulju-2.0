@@ -19,10 +19,6 @@ namespace SterkeFroulju.Controllers
                 return RedirectToAction("NotLoggedIn");
             }
 
-            //User u = new User(0, "Ineke", "IneKal@chello.nl", true, false, "", "", "", "", "", true, true);
-            //UserHandler.UH.AddObject(u);
-            //UserHandler.UH.ChangePassword(u, "Geheim");
-
             List<Pagina> Paginas = PaginaHandler.instance.GetPaginaList(false);
 
             foreach (Pagina p in Paginas)
